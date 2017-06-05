@@ -1,9 +1,12 @@
 
+
+
+
 import java.awt.Dimension;
 import java.awt.Graphics;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
-import java.awt.Color;
+
 import java.awt.Rectangle;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -31,39 +34,43 @@ public class FinalGame extends JComponent {
     long desiredTime = (1000) / desiredFPS;
 
     // YOUR GAME VARIABLES WOULD GO HERE
-    // creating a variable to keep track of the score
+    // creating a variable to keep track of the score 
     int score = 0;
 
-    // creating a variable for the gravity, so that the object is able to move up and down, when needed
+    // creating a variable for the gravity, so that the object is able to move down, when needed
     int gravity = 0;
 
     // creating the ball
     Rectangle ball = new Rectangle(30, 30, 30, 30);
+    
+    // creating the blocks for the 
+    
 
     // creating a variable for the frame ratte of each pizel in the game (for visual appearance) 
     int frameCount = 0;
 
     //creating an an array (its variable) of items that need to be collected by the object the users will have control over
-    ArrayList<Rectangle> coins = new ArrayList<>();
+//    ArrayList<Rectangle> coins = new ArrayList<>();
 
     // GAME VARIABLES END HERE   
     // Constructor to create the Frame and place the panel in
     // You will learn more about this in Grade 12 :)
     public FinalGame() {
         // using the arraylist variable created to make the position of the coins that need to be collected by the object
-        coins = new ArrayList<>();
-        coins.add(new Rectangle(30, 10, 30, 20));
-        coins.add(new Rectangle(100, 10, 30, 20));
-        coins.add(new Rectangle(210, 100, 30, 20));
-        coins.add(new Rectangle(225, 250, 30, 20));
-        coins.add(new Rectangle(290, 300, 30, 20));
-        coins.add(new Rectangle(350, 90, 30, 20));
-        coins.add(new Rectangle(300, 50, 30, 20));
-        coins.add(new Rectangle(190, 175, 30, 20));
-        coins.add(new Rectangle(10, 350, 30, 20));
-        coins.add(new Rectangle(125, 410, 30, 20));
-        coins.add(new Rectangle(50, 50, 30, 20));
-        coins.add(new Rectangle(80, 210, 30, 20));
+//        coins = new ArrayList<>();
+//        coins.add(new Rectangle(30, 10, 30, 20));
+//        coins.add(new Rectangle(100, 10, 30, 20));
+//        coins.add(new Rectangle(210, 100, 30, 20));
+//        coins.add(new Rectangle(225, 250, 30, 20));
+//        coins.add(new Rectangle(290, 300, 30, 20));
+//        coins.add(new Rectangle(350, 90, 30, 20));
+//        coins.add(new Rectangle(300, 50, 30, 20));
+//        coins.add(new Rectangle(190, 175, 30, 20));
+//        coins.add(new Rectangle(10, 350, 30, 20));
+//        coins.add(new Rectangle(125, 410, 30, 20));
+//        coins.add(new Rectangle(50, 50, 30, 20));
+//        coins.add(new Rectangle(80, 210, 30, 20));
+        
         // creates a windows to show my game
         JFrame frame = new JFrame(title);
 
